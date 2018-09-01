@@ -10,8 +10,8 @@ public class DesktopLauncher {
     public static void main(String[] arg) {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
         config.title = "GMTK 2018";
-        config.width = 600;
-        config.height = 600;
+        config.width = 640;
+        config.height = 640;
         config.initialBackgroundColor = Color.WHITE;
         config.samples = 4;
         new LwjglApplication(new MyGame(), config);
