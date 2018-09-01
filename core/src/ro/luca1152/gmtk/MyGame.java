@@ -11,7 +11,18 @@ import ro.luca1152.gmtk.screens.PlayScreen;
 
 public class MyGame extends Game {
     // Constants
-    public static final float PPM = 64; // Pixels per meter
+    public enum EntityCategory {
+        PLAYER(0x0002),
+        OBSTACLE(0x0003),
+        BULLET(0x0004);
+
+        public short bits;
+
+        EntityCategory(int bits){
+            this.bits = (short)bits;
+        }
+    }
+    public static final float PPM = 32; // Pixels per meter
 
     // Game
     public static MyGame instance;
