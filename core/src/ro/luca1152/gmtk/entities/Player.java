@@ -5,8 +5,10 @@ import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.World;
 
+import ro.luca1152.gmtk.MyGame;
 import ro.luca1152.gmtk.utils.MapBodyBuilder;
 
 public class Player {
@@ -22,6 +24,13 @@ public class Player {
 
         // Create the body
         body = destinationWorld.createBody(bodyDef);
-        body.createFixture(MapBodyBuilder.getRectangle((RectangleMapObject) playerObject), 1f);
+        FixtureDef fixtureDef = new FixtureDef();
+        fixtureDef.shape = MapBodyBuilder.getRectangle((RectangleMapObject) playerObject);
+        fixtureDef.density = 2f;
+        fixtureDef.friction = .9f;
+        fixtureDef.filter.categoryBits = MyGame.EntityCategory.PLAYER.bits;
+        fixtureDef.filter.maskBits = MyGame.EntityCategory.OBSTACLE.bits;
+        body.createFixture(fixtureDef);
+        body.setFixedRotation(true);
     }
 }
