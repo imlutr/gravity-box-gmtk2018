@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextobjectid="13">
+ <properties>
+  <property name="hue" type="int" value="180"/>
+ </properties>
+ <tileset firstgid="1" source="tileset.tsx"/>
+ <layer name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+8,3,3,3,3,3,3,3,3,7,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,11,
+6,3,3,3,3,3,3,3,3,5
+</data>
+ </layer>
+ <objectgroup name="Obstacles">
+  <object id="3" x="11" y="11.5" width="300" height="8"/>
+  <object id="4" x="11.5" y="299" width="297.5" height="7"/>
+  <object id="5" x="10.5" y="19.5" width="8.5" height="279.5"/>
+  <object id="6" x="299" y="19.5" width="10" height="279.5"/>
+ </objectgroup>
+ <objectgroup name="Finish">
+  <object id="11" x="64" y="235.5" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="Player">
+  <object id="1" x="193" y="268" width="32" height="32"/>
+ </objectgroup>
+</map>
