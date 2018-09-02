@@ -157,8 +157,8 @@ public class Level {
     }
 
     private void updateCamera() {
-        stage.getCamera().position.set(player.getX(), player.getY(), 0f);
-        int mapLeft = -1, mapRight = mapWidth + 1, mapBottom = -1, mapTop = mapHeight + 1;
+        stage.getCamera().position.set(player.getX(), player.getY()-5f, 0f);
+        int mapLeft = -1, mapRight = mapWidth + 1, mapBottom = 0, mapTop = mapHeight;
         float cameraHalfWidth = stage.getCamera().viewportWidth * .5f,
                 cameraHalfHeight = stage.getCamera().viewportHeight * .5f,
                 cameraLeft = stage.getCamera().position.x - cameraHalfWidth,
