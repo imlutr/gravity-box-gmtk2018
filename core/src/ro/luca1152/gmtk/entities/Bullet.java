@@ -1,5 +1,6 @@
 package ro.luca1152.gmtk.entities;
 
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
@@ -46,6 +47,8 @@ public class Bullet extends Image {
 
     // Move the player
     public static void collisionWithWall(Player player, Body body) {
+        MyGame.manager.get("audio/bullet-wall-collision.wav", Sound.class).play(.2f);
+
         // Create the force vector
         Vector2 sourcePosition = new Vector2(body.getWorldCenter().x, body.getWorldCenter().y);
         float distance = player.body.getWorldCenter().dst(sourcePosition);

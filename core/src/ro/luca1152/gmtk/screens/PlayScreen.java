@@ -2,6 +2,8 @@ package ro.luca1152.gmtk.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 
 import ro.luca1152.gmtk.MyGame;
@@ -15,6 +17,10 @@ public class PlayScreen extends ScreenAdapter {
     @Override
     public void show() {
         Gdx.app.log(TAG, "Entered screen.");
+        Music music = MyGame.manager.get("audio/music.mp3", Music.class);
+        music.setVolume(.15f);
+        music.setLooping(true);
+        music.play();
         level = new Level(levelNumber);
     }
 
@@ -30,6 +36,7 @@ public class PlayScreen extends ScreenAdapter {
         level.update(delta);
         if (level.isFinished && levelNumber + 1 <= MyGame.TOTAL_LEVELS) {
                 level = new Level(++levelNumber);
+                MyGame.manager.get("audio/level-finished.wav", Sound.class).play(.1f);
         }
     }
 

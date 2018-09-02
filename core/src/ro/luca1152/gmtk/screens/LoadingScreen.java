@@ -2,6 +2,8 @@ package ro.luca1152.gmtk.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -26,10 +28,15 @@ public class LoadingScreen extends ScreenAdapter {
         MyGame.manager.load("graphics/circle.png", Texture.class);
         MyGame.manager.load("graphics/finish.png", Texture.class);
 
+        // Audio
+        MyGame.manager.load("audio/music.mp3", Music.class);
+        MyGame.manager.load("audio/level-finished.wav", Sound.class);
+        MyGame.manager.load("audio/bullet-wall-collision.wav", Sound.class);
+
         // Maps
         MyGame.manager.setLoader(TiledMap.class, new TmxMapLoader());
         MyGame.manager.load("maps/map-1.tmx", TiledMap.class);
-//        MyGame.manager.load("maps/map-2.tmx", TiledMap.class);
+        MyGame.manager.load("maps/map-2.tmx", TiledMap.class);
 //        MyGame.manager.load("maps/map-3.tmx", TiledMap.class);
     }
 
