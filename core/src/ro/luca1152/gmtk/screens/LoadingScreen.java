@@ -22,6 +22,7 @@ public class LoadingScreen extends ScreenAdapter {
     private void loadAssets() {
         MyGame.manager.load("graphics/player.png", Texture.class);
         MyGame.manager.load("graphics/bullet.png", Texture.class);
+        MyGame.manager.load("graphics/circle.png", Texture.class);
         MyGame.manager.setLoader(TiledMap.class, new TmxMapLoader());
         MyGame.manager.load("maps/map-1.tmx", TiledMap.class);
     }
@@ -32,6 +33,8 @@ public class LoadingScreen extends ScreenAdapter {
         // Finished loading assets
         if (MyGame.manager.update()) {
             MyGame.manager.get("graphics/player.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+            MyGame.manager.get("graphics/bullet.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+            MyGame.manager.get("graphics/circle.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             timer = ((int) timer * 100) / 100f;
             Gdx.app.log(TAG, "Finished loading assets in " + timer + "s.");
             MyGame.instance.setScreen(MyGame.playScreen);

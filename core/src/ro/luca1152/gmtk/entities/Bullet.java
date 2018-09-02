@@ -60,6 +60,9 @@ public class Bullet extends Image {
         }
         // Push the player
         player.body.applyForce(forceVector, player.body.getWorldCenter(), true);
+
+        // Create explosion
+        player.getStage().addActor(new Explosion(body.getWorldCenter().x, body.getWorldCenter().y));
     }
 
     @Override
