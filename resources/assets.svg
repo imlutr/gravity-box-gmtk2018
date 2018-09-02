@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
+   width="793.70081"
+   height="1122.5197"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="188.5514"
-     inkscape:cy="-79.490844"
+     inkscape:cx="313.68969"
+     inkscape:cy="67.353333"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -47,9 +47,13 @@
      inkscape:object-paths="true"
      inkscape:snap-midpoints="false"
      inkscape:snap-bbox="true"
-     inkscape:bbox-nodes="true"
+     inkscape:bbox-nodes="false"
      inkscape:bbox-paths="false"
-     inkscape:snap-others="false">
+     inkscape:snap-others="false"
+     units="px"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox-edge-midpoints="false">
     <inkscape:grid
        type="xygrid"
        id="grid4524"
@@ -68,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,8 +85,8 @@
        id="rect1474-4-4"
        width="8.4666662"
        height="8.4666662"
-       x="50.799995"
-       y="280.06665"
+       x="110.06667"
+       y="280.06668"
        rx="0"
        ry="0" />
     <rect
@@ -90,8 +94,8 @@
        id="rect1474-4-9"
        width="8.4666662"
        height="8.4666662"
-       x="59.266663"
-       y="280.06665"
+       x="118.53333"
+       y="280.06668"
        rx="0"
        ry="0" />
     <rect
@@ -99,8 +103,8 @@
        id="rect1474-4"
        width="8.4666662"
        height="8.4666662"
-       x="59.266663"
-       y="271.59998"
+       x="118.53333"
+       y="271.60001"
        rx="0"
        ry="0" />
     <rect
@@ -108,8 +112,8 @@
        id="rect1474"
        width="8.4666662"
        height="8.4666662"
-       x="50.799995"
-       y="271.59998"
+       x="110.06667"
+       y="271.60001"
        rx="0"
        ry="0" />
     <rect
@@ -307,7 +311,7 @@
        transform="rotate(90)" />
     <g
        id="g1256-9"
-       transform="translate(31.750001,-16.933353)"
+       transform="translate(91.016667,-16.933327)"
        style="fill:#7d7d7d;fill-opacity:1">
       <rect
          transform="scale(-1)"
@@ -323,7 +327,7 @@
     <g
        id="g1454"
        style="fill:#ffffff;fill-opacity:1"
-       transform="translate(-16.933333,-16.933331)">
+       transform="translate(42.333333,-16.933305)">
       <g
          id="g1252-9"
          transform="matrix(1,0,0,0.62500134,14.816666,104.09856)"
@@ -348,7 +352,7 @@
       </g>
     </g>
     <g
-       transform="translate(14.816662,-28.575003)"
+       transform="translate(74.083328,-28.574977)"
        id="g1252-9-2"
        style="fill:#7d7d7d;fill-opacity:1">
       <path
@@ -361,7 +365,7 @@
     <g
        id="g1460"
        style="fill:#ffffff;fill-opacity:1"
-       transform="translate(-16.933333,-16.933331)">
+       transform="translate(42.333333,-16.933305)">
       <g
          id="g1252-9-2-8"
          transform="matrix(1,0,0,0.62500065,23.283328,104.09877)"
@@ -392,7 +396,7 @@
     <g
        id="g1472"
        style="fill:#ffffff;fill-opacity:1"
-       transform="translate(-16.933333,-16.933331)">
+       transform="translate(42.333333,-16.933305)">
       <g
          id="g1252-9-2-0"
          transform="matrix(1,0,0,0.62502465,14.816666,109.38301)"
@@ -423,7 +427,7 @@
     <g
        id="g1466"
        style="fill:#ffffff;fill-opacity:1"
-       transform="translate(-16.933333,-16.933331)">
+       transform="translate(42.333333,-16.933305)">
       <g
          id="g1252-9-2-7"
          transform="matrix(1,0,0,0.624999,23.283332,109.39093)"
@@ -724,17 +728,988 @@
        id="rect1474-4-9-7-4"
        width="8.4666662"
        height="8.4666662"
-       x="16.933334"
-       y="313.93332"
+       x="50.799999"
+       y="297"
        rx="0"
        ry="0" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 17.991666,313.93333 c -0.586324,0 -1.058333,0.47201 -1.058333,1.05833 v 6.35 c 0,0.58634 0.472009,1.05833 1.058333,1.05833 h 6.35 c 0.586325,0 1.058334,-0.47199 1.058334,-1.05833 v -6.35 c 0,-0.58632 -0.472009,-1.05833 -1.058334,-1.05833 z m 1.19166,1.58906 h 3.966681 c 0.366273,0 0.660942,0.29466 0.660942,0.66093 V 320.15 c 0,0.36629 -0.294669,0.66146 -0.660942,0.66146 h -3.966681 c -0.366273,0 -0.660943,-0.29517 -0.660943,-0.66146 v -3.96668 c 0,-0.36627 0.29467,-0.66093 0.660943,-0.66093 z"
+       d="m 51.858331,297 c -0.586324,0 -1.058333,0.47201 -1.058333,1.05833 v 6.35 c 0,0.58634 0.472009,1.05833 1.058333,1.05833 h 6.35 c 0.586325,0 1.058334,-0.47199 1.058334,-1.05833 v -6.35 C 59.266665,297.47201 58.794656,297 58.208331,297 Z m 1.19166,1.58906 h 3.966681 c 0.366273,0 0.660942,0.29466 0.660942,0.66093 v 3.96668 c 0,0.36629 -0.294669,0.66146 -0.660942,0.66146 h -3.966681 c -0.366273,0 -0.660943,-0.29517 -0.660943,-0.66146 v -3.96668 c 0,-0.36627 0.29467,-0.66093 0.660943,-0.66093 z"
        id="rect1922"
        inkscape:export-filename="C:\Users\Luca\rect1922.png"
        inkscape:export-xdpi="95.853104"
        inkscape:export-ydpi="95.853104"
        inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7"
+       width="8.4666662"
+       height="8.4666662"
+       x="59.266666"
+       y="297"
+       rx="0"
+       ry="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970"
+       width="1.3229166"
+       height="1.3229166"
+       x="62.838539"
+       y="300.57187"
+       ry="0.43595985" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7-5"
+       width="8.4666662"
+       height="8.4666662"
+       x="67.73333"
+       y="297"
+       rx="0"
+       ry="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 71.966665,296.99995 a 4.2333277,4.2333277 0 0 0 -4.233333,4.23334 4.2333277,4.2333277 0 0 0 4.233333,4.23333 4.2333277,4.2333277 0 0 0 4.233333,-4.23333 4.2333277,4.2333277 0 0 0 -4.233333,-4.23334 z m 0,0.68059 a 3.5529763,3.5529763 0 0 1 3.552753,3.55275 3.5529763,3.5529763 0 0 1 -3.552753,3.55277 3.5529763,3.5529763 0 0 1 -3.552754,-3.55277 3.5529763,3.5529763 0 0 1 3.552754,-3.55275 z"
+       id="path2004"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7-50-3"
+       width="8.4666662"
+       height="8.4666662"
+       x="50.799999"
+       y="280.06665"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="95.999992"
+       inkscape:export-ydpi="95.999992" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7-50-3-6"
+       width="8.4666662"
+       height="8.4666662"
+       x="59.266666"
+       y="280.06665"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="95.999992"
+       inkscape:export-ydpi="95.999992" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7-50-3-7"
+       width="8.4666662"
+       height="8.4666662"
+       x="59.266666"
+       y="271.59998"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="95.999992"
+       inkscape:export-ydpi="95.999992" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7-50-3-68"
+       width="8.4666662"
+       height="8.4666662"
+       x="50.799999"
+       y="271.59998"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="95.999992"
+       inkscape:export-ydpi="95.999992" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.430206"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546875"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-9"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-7"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.430206"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-64"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546875"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-0"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-96"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-8"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.430206"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-61"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546875"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-09"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-32"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-1"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.430206"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-0"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546875"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-4"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-5"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-9-0"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="280.46353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-8"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-7-4"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11904895;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-64-5"
+       width="1.3229115"
+       height="1.322917"
+       x="66.013542"
+       y="282.5802"
+       ry="0.43595996"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-0-4"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-96-0"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-8-7"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-61-1"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="284.69687"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-09-1"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-32-4"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-1-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-7"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="282.5802"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-0-0"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="286.81354"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-81"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-58"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-9-1"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-5"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-7-5"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-64-4"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-0-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-96-4"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-8-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-61-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-09-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-32-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="61.780209"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-1-2"
+       width="1.3229166"
+       height="1.3229166"
+       x="63.896873"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-2"
+       width="1.3229166"
+       height="1.3229166"
+       x="59.66354"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-0-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="66.013542"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-5"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-53"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.43021"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-2"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546879"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-9-01"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="271.99686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-82"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-7-55"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.43021"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-64-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546879"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-0-8"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-96-45"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-8-8"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.43021"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-61-3"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546879"
+       y="276.23019"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-09-6"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-32-5"
+       width="1.3229166"
+       height="1.3229166"
+       x="53.313541"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-1-9"
+       width="1.3229166"
+       height="1.3229166"
+       x="55.43021"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-03"
+       width="1.3229166"
+       height="1.3229166"
+       x="51.196873"
+       y="274.11353"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11905098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-3-3-0-9"
+       width="1.3229166"
+       height="1.3229166"
+       x="57.546879"
+       y="278.34686"
+       ry="0.43595985"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#6346cd;fill-opacity:1;stroke:none;stroke-width:1.5504576;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1474-4-9-7-4-7-50-3-6-7"
+       width="16.933334"
+       height="16.933315"
+       x="76.199997"
+       y="271.60001"
+       rx="0"
+       ry="0"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="95.999992"
+       inkscape:export-ydpi="95.999992" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0"
+       width="2.6458333"
+       height="2.6458333"
+       x="76.993744"
+       y="272.39374"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2"
+       width="2.6458333"
+       height="2.6458333"
+       x="76.993744"
+       y="276.62708"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7"
+       width="2.6458333"
+       height="2.6458333"
+       x="76.993744"
+       y="285.09375"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-9"
+       width="2.6458333"
+       height="2.6458333"
+       x="76.993744"
+       y="280.86041"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90"
+       width="2.6458333"
+       height="2.6458333"
+       x="81.227081"
+       y="285.09375"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-2"
+       width="2.6458333"
+       height="2.6458333"
+       x="81.227081"
+       y="280.86041"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-4"
+       width="2.6458333"
+       height="2.6458333"
+       x="81.227081"
+       y="276.62708"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-3"
+       width="2.6458333"
+       height="2.6458333"
+       x="81.227081"
+       y="272.39374"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-9"
+       width="2.6458333"
+       height="2.6458333"
+       x="85.460411"
+       y="272.39374"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-5"
+       width="2.6458333"
+       height="2.6458333"
+       x="85.460411"
+       y="276.62708"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-0"
+       width="2.6458333"
+       height="2.6458333"
+       x="85.460411"
+       y="280.86041"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-99"
+       width="2.6458333"
+       height="2.6458333"
+       x="85.460411"
+       y="285.09375"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-35"
+       width="2.6458333"
+       height="2.6458333"
+       x="89.693748"
+       y="285.09375"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-34"
+       width="2.6458333"
+       height="2.6458333"
+       x="89.693748"
+       y="280.86041"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-43"
+       width="2.6458333"
+       height="2.6458333"
+       x="89.693748"
+       y="276.62708"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.2381022;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1970-8-6-9-5-0-2-7-90-7"
+       width="2.6458333"
+       height="2.6458333"
+       x="89.693748"
+       y="272.39374"
+       ry="0.87191975"
+       inkscape:export-filename="C:\Users\Luca\rect1970-8-3-3-0.png"
+       inkscape:export-xdpi="100.72122"
+       inkscape:export-ydpi="100.72122" />
   </g>
 </svg>

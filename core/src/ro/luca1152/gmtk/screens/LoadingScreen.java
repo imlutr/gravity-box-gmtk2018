@@ -20,13 +20,24 @@ public class LoadingScreen extends ScreenAdapter {
     }
 
     private void loadAssets() {
+        // Textures
         MyGame.manager.load("graphics/player.png", Texture.class);
         MyGame.manager.load("graphics/bullet.png", Texture.class);
         MyGame.manager.load("graphics/circle.png", Texture.class);
+        MyGame.manager.load("graphics/finish.png", Texture.class);
+
+        // Maps
         MyGame.manager.setLoader(TiledMap.class, new TmxMapLoader());
         MyGame.manager.load("maps/map-1.tmx", TiledMap.class);
         MyGame.manager.load("maps/map-2.tmx", TiledMap.class);
         MyGame.manager.load("maps/map-3.tmx", TiledMap.class);
+    }
+
+    @Override
+    public void render(float delta) {
+        update(delta);
+        Gdx.gl20.glClearColor(1f, 1f, 1f, 1f);
+        Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
     }
 
     private void update(float delta) {
@@ -41,13 +52,6 @@ public class LoadingScreen extends ScreenAdapter {
             Gdx.app.log(TAG, "Finished loading assets in " + timer + "s.");
             MyGame.instance.setScreen(MyGame.playScreen);
         }
-    }
-
-    @Override
-    public void render(float delta) {
-        update(delta);
-        Gdx.gl20.glClearColor(1f, 1f, 1f, 1f);
-        Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
     }
 
     @Override

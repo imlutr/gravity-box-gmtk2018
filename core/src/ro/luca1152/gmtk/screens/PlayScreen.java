@@ -14,7 +14,7 @@ public class PlayScreen extends ScreenAdapter {
     @Override
     public void show() {
         Gdx.app.log(TAG, "Entered screen.");
-        level = new Level(2);
+        level = new Level(1);
     }
 
     @Override

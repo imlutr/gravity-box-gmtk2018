@@ -36,8 +36,12 @@ public class Level {
     private int mapWidth, mapHeight;
     private World world;
     private Player player;
+    private Finish finish;
 
     public Level(int levelNumber) {
+        stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
+        b2dRenderer = new Box2DDebugRenderer();
+
         // Generate colors
         int hue = MathUtils.random(0, 360);
         MyGame.lightColor = MyGame.getLightColor(hue);
@@ -49,20 +53,22 @@ public class Level {
         mapWidth = (Integer) mapProperties.get("width");
         mapHeight = (Integer) mapProperties.get("height");
 
+        // Create the [mapRenderer]
+        mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM, MyGame.batch);
+
         // Create the Box2D [world]
         world = new World(new Vector2(0, -36f), true);
 
         // Add the Box2D bodies from the [map] to the [world]
         MapBodyBuilder.buildShapes(map, MyGame.PPM, world);
 
-        // Create the player based on the location on the [map]
+        // Create the player based on its location on the [map]
         player = new Player(map, world);
-
-        // Initialize tools
-        stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
         stage.addActor(player);
-        mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM, MyGame.batch);
-        b2dRenderer = new Box2DDebugRenderer();
+
+        // Create the finish point based on its location on the [map]
+        finish = new Finish(map, world);
+        stage.addActor(finish);
 
         // Handle the mouse click
         setInputProcessor();
@@ -132,21 +138,6 @@ public class Level {
         sweepDeadBodies();
     }
 
-    private void sweepDeadBodies() {
-        Array<Body> array = new Array<Body>();
-        world.getBodies(array);
-        for (Body body : array) {
-            if (body != null && body.getUserData() != null && body.getUserData().getClass() == MyUserData.class) {
-                MyUserData data = (MyUserData) body.getUserData();
-                if (data.isFlaggedForDelete) {
-                    Bullet.collisionWithWall(player, body);
-                    world.destroyBody(body);
-                    body.setUserData(null);
-                }
-            }
-        }
-    }
-
     private void updateCamera() {
         stage.getCamera().position.set(player.getX(), player.getY(), 0f);
         int mapLeft = 0, mapRight = mapWidth, mapBottom = 0, mapTop = mapHeight;
@@ -172,6 +163,21 @@ public class Level {
             stage.getCamera().position.y = mapTop - cameraHalfHeight;
         // Update the camera
         stage.getCamera().update();
+    }
+
+    private void sweepDeadBodies() {
+        Array<Body> array = new Array<Body>();
+        world.getBodies(array);
+        for (Body body : array) {
+            if (body != null && body.getUserData() != null && body.getUserData().getClass() == MyUserData.class) {
+                MyUserData data = (MyUserData) body.getUserData();
+                if (data.isFlaggedForDelete) {
+                    Bullet.collisionWithWall(player, body);
+                    world.destroyBody(body);
+                    body.setUserData(null);
+                }
+            }
+        }
     }
 
     public void draw() {
