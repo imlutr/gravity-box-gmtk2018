@@ -54,20 +54,20 @@ public class Level {
 
         b2dRenderer = new Box2DDebugRenderer();
 
+        // Create the [map]
+        map = MyGame.manager.get("maps/map-" + levelNumber + ".tmx", TiledMap.class);
+        MapProperties mapProperties = map.getProperties();
+        mapWidth = (Integer) mapProperties.get("width");
+        mapHeight = (Integer) mapProperties.get("height");
+
         // Generate colors
-        hue = MathUtils.random(0, 360);
+        hue = (Integer) mapProperties.get("hue");
         MyGame.lightColor = MyGame.getLightColor(hue);
         MyGame.darkColor = MyGame.getDarkColor(hue);
         originalLightColor = MyGame.lightColor.cpy();
         originalDarkColor = MyGame.darkColor.cpy();
         MyGame.lightColor2 = MyGame.getLightColor2(hue);
         MyGame.darkColor2 = MyGame.getDarkColor2(hue);
-
-        // Create the [map]
-        map = MyGame.manager.get("maps/map-" + levelNumber + ".tmx", TiledMap.class);
-        MapProperties mapProperties = map.getProperties();
-        mapWidth = (Integer) mapProperties.get("width");
-        mapHeight = (Integer) mapProperties.get("height");
 
         // Create the [mapRenderer]
         mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM, MyGame.batch);

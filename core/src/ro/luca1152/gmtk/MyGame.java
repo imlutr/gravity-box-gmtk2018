@@ -2,6 +2,7 @@ package ro.luca1152.gmtk;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -43,6 +44,7 @@ public class MyGame extends Game {
     // Tools
     public static Batch batch;
     public static AssetManager manager;
+    public static Preferences preferences;
 
     // Screens
     public static PlayScreen playScreen;
@@ -92,6 +94,7 @@ public class MyGame extends Game {
 
         // Fonts
         font32 = new BitmapFont(Gdx.files.internal("fonts/font-32.fnt"));
+        preferences = Gdx.app.getPreferences("GMTK 2018 by Luca1152");
 
         setScreen(MyGame.loadingScreen);
     }
