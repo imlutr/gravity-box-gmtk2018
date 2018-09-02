@@ -43,7 +43,7 @@ public class PlayScreen extends ScreenAdapter {
         Gdx.app.log(TAG, "Entered screen.");
 
         // Create the map
-        map = MyGame.manager.get("maps/map-2.tmx", TiledMap.class);
+        map = MyGame.manager.get("maps/map-3.tmx", TiledMap.class);
 
         // Create the color
         MyGame.lightColor = MyGame.getLightColor(200);
@@ -136,7 +136,7 @@ public class PlayScreen extends ScreenAdapter {
 
     private void updateCamera() {
         stage.getCamera().position.set(player.getX(), player.getY(), 0f);
-        int mapLeft = 0, mapRight = 40, mapBottom = 0, mapTop = 40;
+        int mapLeft = 0, mapRight = 10, mapBottom = 0, mapTop = 10;
         float cameraHalfWidth = stage.getCamera().viewportWidth * .5f,
                 cameraHalfHeight = stage.getCamera().viewportHeight * .5f,
                 cameraLeft = stage.getCamera().position.x - cameraHalfWidth,
