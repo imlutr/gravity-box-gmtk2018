@@ -28,11 +28,11 @@
 </data>
  </layer>
  <objectgroup name="Obstacles">
-  <object id="33" x="31.8182" y="427.273" width="576.182" height="8.54545"/>
-  <object id="35" x="267.75" y="107.979" width="8.25" height="243.771"/>
-  <object id="36" x="395.784" y="108.079" width="8.25" height="243.302"/>
-  <object id="38" x="0" y="108" width="267.756" height="7.94886"/>
-  <object id="39" x="404.031" y="108.071" width="267.756" height="7.94886"/>
+  <object id="33" x="31.8182" y="428.523" width="576.182" height="7.29545"/>
+  <object id="35" x="268.25" y="108.604" width="7.25" height="243.146"/>
+  <object id="36" x="396.284" y="108.548" width="7.125" height="242.833"/>
+  <object id="38" x="0" y="108.563" width="268.318" height="7.38636"/>
+  <object id="39" x="403.424" y="108.576" width="236.363" height="7.444"/>
  </objectgroup>
  <objectgroup name="Player">
   <object id="40" x="320" y="352" width="32" height="32"/>
