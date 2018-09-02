@@ -8,7 +8,6 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.physics.box2d.Body;
@@ -38,6 +37,8 @@ public class Level {
     public boolean isFinished = false, reset = false, mapIsVisible = false;
     private OrthogonalTiledMapRenderer mapRenderer;
     private Box2DDebugRenderer b2dRenderer;
+    Label.LabelStyle labelStyle;
+
 
     // Original colors
     private Color originalLightColor, originalDarkColor;
@@ -51,7 +52,6 @@ public class Level {
     public Level(int levelNumber) {
         stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
         uiStage = new Stage(new FitViewport(640, 640), stage.getBatch());
-
         b2dRenderer = new Box2DDebugRenderer();
 
         // Create the [map]
@@ -68,6 +68,9 @@ public class Level {
         originalDarkColor = MyGame.darkColor.cpy();
         MyGame.lightColor2 = MyGame.getLightColor2(hue);
         MyGame.darkColor2 = MyGame.getDarkColor2(hue);
+
+        // Create the labelStyle
+        labelStyle = new Label.LabelStyle(MyGame.font32, MyGame.darkColor);
 
         // Create the [mapRenderer]
         mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM, MyGame.batch);
@@ -97,6 +100,9 @@ public class Level {
         // Create hints if it's the first level
         if (levelNumber == 1)
             createHints();
+
+        // Show the level in the bottom right
+        createLevelLabel(levelNumber);
     }
 
     private void setInputProcessor() {
@@ -169,7 +175,6 @@ public class Level {
     }
 
     private void createHints() {
-        Label.LabelStyle labelStyle = new Label.LabelStyle(MyGame.font32, MyGame.darkColor);
         Label info1 = new Label("shoot at the walls to move\npress 'R' to restart the level", labelStyle);
         info1.setAlignment(Align.center);
         info1.setPosition(320 - info1.getPrefWidth() / 2f, 470);
@@ -183,6 +188,17 @@ public class Level {
         info2.addAction(Actions.fadeOut(0));
         info2.addAction(Actions.fadeIn(2f));
         uiStage.addActor(info2);
+    }
+
+    private void createLevelLabel(int levelNumber) {
+        Label level = new Label("#" + levelNumber, labelStyle);
+        level.setAlignment(Align.right);
+        level.setPosition(640f - level.getPrefWidth() - 10f, 7f);
+        if (levelNumber == 1) {
+            level.addAction(Actions.fadeOut(0f));
+            level.addAction(Actions.fadeIn(2f));
+        }
+        uiStage.addActor(level);
     }
 
     public void update(float delta) {
