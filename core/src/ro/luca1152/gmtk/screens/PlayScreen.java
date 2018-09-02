@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.Contact;
@@ -34,7 +35,6 @@ public class PlayScreen extends ScreenAdapter {
     private Player player;
 
     private Stage stage;
-    private OrthographicCamera camera;
     private OrthogonalTiledMapRenderer mapRenderer;
     private Box2DDebugRenderer b2dRenderer;
 
@@ -43,7 +43,7 @@ public class PlayScreen extends ScreenAdapter {
         Gdx.app.log(TAG, "Entered screen.");
 
         // Create the map
-        map = MyGame.manager.get("maps/map-1.tmx", TiledMap.class);
+        map = MyGame.manager.get("maps/map-2.tmx", TiledMap.class);
 
         // Create the color
         MyGame.lightColor = MyGame.getLightColor(200);
@@ -60,7 +60,6 @@ public class PlayScreen extends ScreenAdapter {
         // Tools
         stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
         stage.addActor(player);
-        camera = new OrthographicCamera(20, 20);
         mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM, MyGame.batch);
         b2dRenderer = new Box2DDebugRenderer();
 
@@ -70,7 +69,10 @@ public class PlayScreen extends ScreenAdapter {
                 // Create the bullet
                 Bullet bullet = new Bullet(world, player);
                 stage.addActor(bullet);
-                Vector2 sourcePosition = new Vector2(screenX / MyGame.PPM, (Gdx.graphics.getHeight() - screenY) / MyGame.PPM);
+
+                Vector3 worldCoordinates = new Vector3(screenX, screenY, 0);
+                stage.getCamera().unproject(worldCoordinates);
+                Vector2 sourcePosition = new Vector2(worldCoordinates.x, worldCoordinates.y);
                 Vector2 forceVector = player.body.getWorldCenter().cpy();
                 forceVector.sub(sourcePosition);
                 forceVector.nor();
@@ -117,18 +119,46 @@ public class PlayScreen extends ScreenAdapter {
         Gdx.gl20.glClearColor(MyGame.lightColor.r, MyGame.lightColor.g, MyGame.lightColor.b, MyGame.lightColor.a);
         Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
         MyGame.batch.setColor(MyGame.darkColor);
+        MyGame.batch.setProjectionMatrix(stage.getCamera().combined);
         mapRenderer.render();
         stage.draw();
         MyGame.batch.setColor(Color.WHITE);
-//        b2dRenderer.render(world, camera.combined);
+//        b2dRenderer.render(world, stage.getCamera().combined);
     }
 
     private void update(float delta) {
         stage.act(delta);
-        camera.update();
-        mapRenderer.setView(camera);
+        updateCamera();
+        mapRenderer.setView((OrthographicCamera) stage.getCamera());
         world.step(1 / 60f, 6, 2);
         sweepDeadBodies();
+    }
+
+    private void updateCamera() {
+        stage.getCamera().position.set(player.getX(), player.getY(), 0f);
+        int mapLeft = 0, mapRight = 40, mapBottom = 0, mapTop = 40;
+        float cameraHalfWidth = stage.getCamera().viewportWidth * .5f,
+                cameraHalfHeight = stage.getCamera().viewportHeight * .5f,
+                cameraLeft = stage.getCamera().position.x - cameraHalfWidth,
+                cameraRight = stage.getCamera().position.x + cameraHalfWidth,
+                cameraBottom = stage.getCamera().position.y - cameraHalfHeight,
+                cameraTop = stage.getCamera().position.y + cameraHalfHeight;
+        // Clamp horizontal axis
+        if (stage.getCamera().viewportWidth > mapRight)
+            stage.getCamera().position.x = mapRight / 2;
+        else if (cameraLeft <= mapLeft)
+            stage.getCamera().position.x = mapLeft + cameraHalfWidth;
+        else if (cameraRight >= mapRight)
+            stage.getCamera().position.x = mapRight - cameraHalfWidth;
+        // Clamp Vertical axis
+        if (stage.getCamera().viewportHeight > mapTop)
+            stage.getCamera().position.y = mapTop / 2;
+        else if (cameraBottom <= mapBottom)
+            stage.getCamera().position.y = mapBottom + cameraHalfHeight;
+        else if (cameraTop >= mapTop)
+            stage.getCamera().position.y = mapTop - cameraHalfHeight;
+        // Update the camera
+        stage.getCamera().update();
     }
 
     private void sweepDeadBodies() {
@@ -148,12 +178,11 @@ public class PlayScreen extends ScreenAdapter {
 
     @Override
     public void hide() {
-        Gdx.app.log(TAG, "Left.");
+        Gdx.app.log(TAG, "Left screen.");
     }
 
     @Override
     public void resize(int width, int height) {
-        camera.position.set(camera.viewportWidth / 2f, camera.viewportHeight / 2f, 0f);
-        camera.update();
+        stage.getViewport().update(width, height);
     }
 }
