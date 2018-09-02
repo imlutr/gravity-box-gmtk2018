@@ -37,7 +37,7 @@ public class Player extends Image {
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = MapBodyBuilder.getRectangle((RectangleMapObject) playerObject);
         fixtureDef.density = 2f;
-        fixtureDef.friction = .9f;
+        fixtureDef.friction = 2f;
         fixtureDef.filter.categoryBits = MyGame.EntityCategory.PLAYER.bits;
         fixtureDef.filter.maskBits = MyGame.EntityCategory.OBSTACLE.bits;
         body.createFixture(fixtureDef);
