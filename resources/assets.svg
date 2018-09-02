@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="79.582032"
-     inkscape:cy="-66.261377"
+     inkscape:zoom="3.959798"
+     inkscape:cx="188.5514"
+     inkscape:cy="-79.490844"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,7 +38,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-nodes="true"
+     inkscape:snap-nodes="false"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0"
      inkscape:object-nodes="false"
@@ -48,7 +48,8 @@
      inkscape:snap-midpoints="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:bbox-paths="false">
+     inkscape:bbox-paths="false"
+     inkscape:snap-others="false">
     <inkscape:grid
        type="xygrid"
        id="grid4524"
@@ -723,14 +724,17 @@
        id="rect1474-4-9-7-4"
        width="8.4666662"
        height="8.4666662"
-       x="25.4"
+       x="16.933334"
        y="313.93332"
        rx="0"
        ry="0" />
     <path
-       style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:2.93000007;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 100 1186.5195 C 97.783971 1186.5195 96 1188.3035 96 1190.5195 L 96 1214.5195 C 96 1216.7356 97.783971 1218.5195 100 1218.5195 L 124 1218.5195 C 126.21603 1218.5195 128 1216.7356 128 1214.5195 L 128 1190.5195 C 128 1188.3035 126.21603 1186.5195 124 1186.5195 L 100 1186.5195 z M 103 1190.5195 L 121 1190.5195 C 122.66203 1190.5195 124 1191.8575 124 1193.5195 L 124 1211.5195 C 124 1213.1816 122.66203 1214.5195 121 1214.5195 L 103 1214.5195 C 101.33797 1214.5195 100 1213.1816 100 1211.5195 L 100 1193.5195 C 100 1191.8575 101.33797 1190.5195 103 1190.5195 z "
-       transform="scale(0.26458333)"
-       id="rect1922" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.77522916;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 17.991666,313.93333 c -0.586324,0 -1.058333,0.47201 -1.058333,1.05833 v 6.35 c 0,0.58634 0.472009,1.05833 1.058333,1.05833 h 6.35 c 0.586325,0 1.058334,-0.47199 1.058334,-1.05833 v -6.35 c 0,-0.58632 -0.472009,-1.05833 -1.058334,-1.05833 z m 1.19166,1.58906 h 3.966681 c 0.366273,0 0.660942,0.29466 0.660942,0.66093 V 320.15 c 0,0.36629 -0.294669,0.66146 -0.660942,0.66146 h -3.966681 c -0.366273,0 -0.660943,-0.29517 -0.660943,-0.66146 v -3.96668 c 0,-0.36627 0.29467,-0.66093 0.660943,-0.66093 z"
+       id="rect1922"
+       inkscape:export-filename="C:\Users\Luca\rect1922.png"
+       inkscape:export-xdpi="95.853104"
+       inkscape:export-ydpi="95.853104"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

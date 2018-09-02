@@ -69,6 +69,7 @@ public class PlayScreen extends ScreenAdapter {
             public boolean touchUp(int screenX, int screenY, int pointer, int button) {
                 // Create the bullet
                 Bullet bullet = new Bullet(world, player);
+                stage.addActor(bullet);
                 Vector2 sourcePosition = new Vector2(screenX / MyGame.PPM, (Gdx.graphics.getHeight() - screenY) / MyGame.PPM);
                 Vector2 forceVector = player.body.getWorldCenter().cpy();
                 forceVector.sub(sourcePosition);
@@ -119,7 +120,7 @@ public class PlayScreen extends ScreenAdapter {
         mapRenderer.render();
         stage.draw();
         MyGame.batch.setColor(Color.WHITE);
-        b2dRenderer.render(world, camera.combined);
+//        b2dRenderer.render(world, camera.combined);
     }
 
     private void update(float delta) {

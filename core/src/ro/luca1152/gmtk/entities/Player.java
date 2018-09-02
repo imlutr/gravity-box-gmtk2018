@@ -50,11 +50,4 @@ public class Player extends Image {
         setRotation(MathUtils.radiansToDegrees * body.getTransform().getRotation());
         setColor(MyGame.darkColor);
     }
-
-    @Override
-    public void draw(Batch batch, float parentAlpha) {
-        Color color = getColor();
-        batch.setColor(color.r, color.g, color.b, color.a * parentAlpha);
-        super.draw(batch, parentAlpha);
-    }
 }
