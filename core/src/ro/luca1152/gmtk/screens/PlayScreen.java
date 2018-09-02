@@ -12,7 +12,7 @@ import ro.luca1152.gmtk.entities.Level;
 public class PlayScreen extends ScreenAdapter {
     private final String TAG = PlayScreen.class.getSimpleName();
     private Level level;
-    private int levelNumber = 1;
+    private int levelNumber = 4;
 
     @Override
     public void show() {

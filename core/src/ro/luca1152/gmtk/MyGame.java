@@ -29,7 +29,7 @@ public class MyGame extends Game {
         }
     }
 
-    public static final float TOTAL_LEVELS = 2;
+    public static final float TOTAL_LEVELS = 4;
     public static final float PPM = 32; // Pixels per meter
 
     // Colors

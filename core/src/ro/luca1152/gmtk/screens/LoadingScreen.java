@@ -37,7 +37,8 @@ public class LoadingScreen extends ScreenAdapter {
         MyGame.manager.setLoader(TiledMap.class, new TmxMapLoader());
         MyGame.manager.load("maps/map-1.tmx", TiledMap.class);
         MyGame.manager.load("maps/map-2.tmx", TiledMap.class);
-//        MyGame.manager.load("maps/map-3.tmx", TiledMap.class);
+        MyGame.manager.load("maps/map-3.tmx", TiledMap.class);
+        MyGame.manager.load("maps/map-4.tmx", TiledMap.class);
     }
 
     @Override

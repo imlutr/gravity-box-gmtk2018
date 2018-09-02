@@ -175,7 +175,7 @@ public class Level {
     }
 
     private void createHints() {
-        Label info1 = new Label("shoot at the walls to move\npress 'R' to restart the level", labelStyle);
+        Label info1 = new Label("shoot at the walls/floor to move\npress 'R' to restart the level", labelStyle);
         info1.setAlignment(Align.center);
         info1.setPosition(320 - info1.getPrefWidth() / 2f, 470);
         info1.addAction(Actions.fadeOut(0));
