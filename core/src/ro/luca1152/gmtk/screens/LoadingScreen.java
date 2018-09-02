@@ -48,6 +48,7 @@ public class LoadingScreen extends ScreenAdapter {
             MyGame.manager.get("graphics/player.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             MyGame.manager.get("graphics/bullet.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             MyGame.manager.get("graphics/circle.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+            MyGame.manager.get("graphics/finish.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             timer = ((int) timer * 100) / 100f;
             Gdx.app.log(TAG, "Finished loading assets in " + timer + "s.");
             MyGame.instance.setScreen(MyGame.playScreen);

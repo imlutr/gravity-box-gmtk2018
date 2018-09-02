@@ -13,6 +13,8 @@ import ro.luca1152.gmtk.screens.PlayScreen;
 public class MyGame extends Game {
     // Constants
     public enum EntityCategory {
+        NONE(0x0000),
+        FINISH(0x0001),
         PLAYER(0x0002),
         OBSTACLE(0x0003),
         BULLET(0x0004);
@@ -29,6 +31,8 @@ public class MyGame extends Game {
     // Colors
     public static Color lightColor = new Color();
     public static Color darkColor = new Color();
+    public static Color lightColor2 = new Color();
+    public static Color darkColor2 = new Color();
 
     // Game
     public static MyGame instance;
@@ -52,6 +56,19 @@ public class MyGame extends Game {
         color.a = 1f;
         return color;
     }
+
+    public static Color getLightColor2(int hue) {
+        Color color = new Color().fromHsv(hue, 94f / 100f, 20f / 100f);
+        color.a = 1f;
+        return color;
+    }
+
+    public static Color getDarkColor2(int hue) {
+        Color color = new Color().fromHsv(hue, 85f / 100f, 95f / 100f);
+        color.a = 1f;
+        return color;
+    }
+
 
     @Override
     public void create() {

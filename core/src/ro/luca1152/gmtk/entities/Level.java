@@ -31,7 +31,11 @@ public class Level {
     private OrthogonalTiledMapRenderer mapRenderer;
     private Box2DDebugRenderer b2dRenderer;
 
+    // Original colors
+    private Color originalLightColor, originalDarkColor;
+
     // Level
+    public static int hue;
     private TiledMap map;
     private int mapWidth, mapHeight;
     private World world;
@@ -43,9 +47,13 @@ public class Level {
         b2dRenderer = new Box2DDebugRenderer();
 
         // Generate colors
-        int hue = MathUtils.random(0, 360);
+        hue = MathUtils.random(0, 360);
         MyGame.lightColor = MyGame.getLightColor(hue);
         MyGame.darkColor = MyGame.getDarkColor(hue);
+        originalLightColor = MyGame.lightColor.cpy();
+        originalDarkColor = MyGame.darkColor.cpy();
+        MyGame.lightColor2 = MyGame.getLightColor2(hue);
+        MyGame.darkColor2 = MyGame.getDarkColor2(hue);
 
         // Create the [map]
         map = MyGame.manager.get("maps/map-" + levelNumber + ".tmx", TiledMap.class);
@@ -62,13 +70,13 @@ public class Level {
         // Add the Box2D bodies from the [map] to the [world]
         MapBodyBuilder.buildShapes(map, MyGame.PPM, world);
 
-        // Create the player based on its location on the [map]
-        player = new Player(map, world);
-        stage.addActor(player);
-
         // Create the finish point based on its location on the [map]
         finish = new Finish(map, world);
         stage.addActor(finish);
+
+        // Create the player based on its location on the [map]
+        player = new Player(map, world);
+        stage.addActor(player);
 
         // Handle the mouse click
         setInputProcessor();
@@ -104,10 +112,18 @@ public class Level {
             public void beginContact(Contact contact) {
                 Body bodyA = contact.getFixtureA().getBody();
                 Body bodyB = contact.getFixtureB().getBody();
+
+                // Collision between a bullet and a wall
                 if (contact.getFixtureB().getFilterData().categoryBits == MyGame.EntityCategory.BULLET.bits)
                     flagForDelete(bodyB);
                 if (contact.getFixtureA().getFilterData().categoryBits == MyGame.EntityCategory.BULLET.bits)
                     flagForDelete(bodyA);
+
+//               // Collision between player and the finish point
+//                if ((contact.getFixtureA().getFilterData().categoryBits == MyGame.EntityCategory.FINISH.bits && contact.getFixtureB().getFilterData().categoryBits == MyGame.EntityCategory.PLAYER.bits) ||
+//                        (contact.getFixtureB().getFilterData().categoryBits == MyGame.EntityCategory.FINISH.bits && contact.getFixtureA().getFilterData().categoryBits == MyGame.EntityCategory.PLAYER.bits)) {
+//                    finish.playerEntered();
+//                }
             }
 
             private void flagForDelete(Body body) {
@@ -136,6 +152,7 @@ public class Level {
         mapRenderer.setView((OrthographicCamera) stage.getCamera());
         world.step(1 / 60f, 6, 2);
         sweepDeadBodies();
+        playerCollidesFinish();
     }
 
     private void updateCamera() {
@@ -177,6 +194,16 @@ public class Level {
                     body.setUserData(null);
                 }
             }
+        }
+    }
+
+    private void playerCollidesFinish() {
+        if (player.getCollisionBox().overlaps(finish.getCollisionBox())) {
+            MyGame.lightColor.lerp(MyGame.lightColor2, .05f);
+            MyGame.darkColor.lerp(MyGame.darkColor2, .05f);
+        } else {
+            MyGame.lightColor.lerp(originalLightColor, .05f);
+            MyGame.darkColor.lerp(originalDarkColor, .05f);
         }
     }
 
