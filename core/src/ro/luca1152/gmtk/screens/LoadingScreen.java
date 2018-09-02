@@ -3,6 +3,7 @@ package ro.luca1152.gmtk.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 
@@ -19,6 +20,7 @@ public class LoadingScreen extends ScreenAdapter {
     }
 
     private void loadAssets() {
+        MyGame.manager.load("graphics/player.png", Texture.class);
         MyGame.manager.setLoader(TiledMap.class, new TmxMapLoader());
         MyGame.manager.load("maps/map-1.tmx", TiledMap.class);
     }
@@ -28,6 +30,7 @@ public class LoadingScreen extends ScreenAdapter {
 
         // Finished loading assets
         if (MyGame.manager.update()) {
+            MyGame.manager.get("graphics/player.png", Texture.class).setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             timer = ((int) timer * 100) / 100f;
             Gdx.app.log(TAG, "Finished loading assets in " + timer + "s.");
             MyGame.instance.setScreen(MyGame.playScreen);

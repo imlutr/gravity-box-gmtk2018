@@ -16,7 +16,9 @@ import com.badlogic.gdx.physics.box2d.ContactImpulse;
 import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Manifold;
 import com.badlogic.gdx.physics.box2d.World;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.viewport.FitViewport;
 
 import ro.luca1152.gmtk.MyGame;
 import ro.luca1152.gmtk.entities.Bullet;
@@ -31,6 +33,7 @@ public class PlayScreen extends ScreenAdapter {
     private World world;
     private Player player;
 
+    private Stage stage;
     private OrthographicCamera camera;
     private OrthogonalTiledMapRenderer mapRenderer;
     private Box2DDebugRenderer b2dRenderer;
@@ -55,8 +58,10 @@ public class PlayScreen extends ScreenAdapter {
         player = new Player(map, world);
 
         // Tools
+        stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
+        stage.addActor(player);
         camera = new OrthographicCamera(20, 20);
-        mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM);
+        mapRenderer = new OrthogonalTiledMapRenderer(map, 1 / MyGame.PPM, MyGame.batch);
         b2dRenderer = new Box2DDebugRenderer();
 
         Gdx.input.setInputProcessor(new InputAdapter() {
@@ -110,13 +115,15 @@ public class PlayScreen extends ScreenAdapter {
         update(delta);
         Gdx.gl20.glClearColor(MyGame.lightColor.r, MyGame.lightColor.g, MyGame.lightColor.b, MyGame.lightColor.a);
         Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        mapRenderer.getBatch().setColor(MyGame.darkColor);
+        MyGame.batch.setColor(MyGame.darkColor);
         mapRenderer.render();
-        mapRenderer.getBatch().setColor(Color.WHITE);
+        stage.draw();
+        MyGame.batch.setColor(Color.WHITE);
         b2dRenderer.render(world, camera.combined);
     }
 
     private void update(float delta) {
+        stage.act(delta);
         camera.update();
         mapRenderer.setView(camera);
         world.step(1 / 60f, 6, 2);
