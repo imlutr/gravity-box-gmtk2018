@@ -34,6 +34,10 @@ public class PlayScreen extends ScreenAdapter {
 
     private void update(float delta) {
         level.update(delta);
+        if (level.reset) {
+            level = new Level(levelNumber);
+            level.reset = false;
+        }
         if (level.isFinished && levelNumber + 1 <= MyGame.TOTAL_LEVELS) {
                 level = new Level(++levelNumber);
                 MyGame.manager.get("audio/level-finished.wav", Sound.class).play(.2f);

@@ -45,6 +45,9 @@ public class Player extends Image {
         // Create the collision box
         collisionBox = new Rectangle();
         collisionBox.setSize(getWidth(), getHeight());
+
+        // Update the position
+        setPosition(body.getWorldCenter().x - getWidth() / 2f, body.getWorldCenter().y - getHeight() / 2f);
     }
 
     @Override

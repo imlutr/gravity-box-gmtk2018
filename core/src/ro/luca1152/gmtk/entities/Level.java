@@ -1,6 +1,7 @@
 package ro.luca1152.gmtk.entities;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -29,22 +30,23 @@ import ro.luca1152.gmtk.utils.MapBodyBuilder;
 import ro.luca1152.gmtk.utils.MyUserData;
 
 public class Level {
+    // Level
+    public static int hue;
+
     // Tools
     public Stage stage, uiStage;
+    public boolean isFinished = false, reset = false, mapIsVisible = false;
     private OrthogonalTiledMapRenderer mapRenderer;
     private Box2DDebugRenderer b2dRenderer;
 
     // Original colors
     private Color originalLightColor, originalDarkColor;
 
-    // Level
-    public static int hue;
     private TiledMap map;
     private int mapWidth, mapHeight;
     private World world;
     private Player player;
     private Finish finish;
-    public boolean isFinished = false;
 
     public Level(int levelNumber) {
         stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
@@ -78,10 +80,12 @@ public class Level {
 
         // Create the finish point based on its location on the [map]
         finish = new Finish(map, world);
+        finish.setVisible(false);
         stage.addActor(finish);
 
         // Create the player based on its location on the [map]
         player = new Player(map, world);
+        player.setVisible(false);
         stage.addActor(player);
 
         // Handle the mouse click
@@ -93,24 +97,6 @@ public class Level {
         // Create hints if it's the first level
         if (levelNumber == 1)
             createHints();
-    }
-
-
-    private void createHints() {
-        Label.LabelStyle labelStyle = new Label.LabelStyle(MyGame.font32, MyGame.darkColor);
-        Label info1 = new Label("shoot at the walls to move\npress 'R' to restart", labelStyle);
-        info1.setAlignment(Align.center);
-        info1.setPosition(320 - info1.getPrefWidth() / 2f, 470);
-        info1.addAction(Actions.fadeOut(0));
-        info1.addAction(Actions.fadeIn(2f));
-        uiStage.addActor(info1);
-
-        Label info2 = new Label("the blinking object is the finish point", labelStyle);
-        info2.setAlignment(Align.center);
-        info2.setPosition(320 - info2.getPrefWidth() / 2f, 135);
-        info2.addAction(Actions.fadeOut(0));
-        info2.addAction(Actions.fadeIn(2f));
-        uiStage.addActor(info2);
     }
 
     private void setInputProcessor() {
@@ -129,6 +115,14 @@ public class Level {
                 forceVector.nor();
                 forceVector.scl(-Bullet.SPEED);
                 bullet.body.setLinearVelocity(forceVector);
+                return true;
+            }
+
+            @Override
+            public boolean keyDown(int keycode) {
+                if (keycode == Input.Keys.R) {
+                    reset = true;
+                }
                 return true;
             }
         });
@@ -174,14 +168,39 @@ public class Level {
         });
     }
 
+    private void createHints() {
+        Label.LabelStyle labelStyle = new Label.LabelStyle(MyGame.font32, MyGame.darkColor);
+        Label info1 = new Label("shoot at the walls to move\npress 'R' to restart the level", labelStyle);
+        info1.setAlignment(Align.center);
+        info1.setPosition(320 - info1.getPrefWidth() / 2f, 470);
+        info1.addAction(Actions.fadeOut(0));
+        info1.addAction(Actions.fadeIn(2f));
+        uiStage.addActor(info1);
+
+        Label info2 = new Label("the blinking object is the finish point", labelStyle);
+        info2.setAlignment(Align.center);
+        info2.setPosition(320 - info2.getPrefWidth() / 2f, 135);
+        info2.addAction(Actions.fadeOut(0));
+        info2.addAction(Actions.fadeIn(2f));
+        uiStage.addActor(info2);
+    }
+
     public void update(float delta) {
+        world.step(1 / 60f, 6, 2);
         stage.act(delta);
         uiStage.act(delta);
+        updateVisibility();
         updateCamera();
         mapRenderer.setView((OrthographicCamera) stage.getCamera());
-        world.step(1 / 60f, 6, 2);
         sweepDeadBodies();
         playerCollidesFinish();
+    }
+
+    // Some entities may show up for .1s if I don't do this
+    private void updateVisibility() {
+        player.setVisible(true);
+        finish.setVisible(true);
+        mapIsVisible = true;
     }
 
     private void updateCamera() {
@@ -243,10 +262,12 @@ public class Level {
     public void draw() {
         MyGame.batch.setColor(MyGame.darkColor);
         MyGame.batch.setProjectionMatrix(stage.getCamera().combined);
-        mapRenderer.render();
-        stage.draw();
-        MyGame.batch.setColor(Color.WHITE);
+        if (mapIsVisible) {
+            mapRenderer.render();
+            stage.draw();
+            MyGame.batch.setColor(Color.WHITE);
 //        b2dRenderer.render(world, stage.getCamera().combined);
+        }
         uiStage.draw();
     }
 }
