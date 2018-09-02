@@ -89,7 +89,7 @@ public class Level {
     private void setInputProcessor() {
         Gdx.input.setInputProcessor(new InputAdapter() {
             @Override
-            public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+            public boolean touchDown(int screenX, int screenY, int pointer, int button) {
                 // Create the bullet
                 Bullet bullet = new Bullet(world, player);
                 stage.addActor(bullet);
