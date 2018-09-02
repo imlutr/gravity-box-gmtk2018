@@ -1,6 +1,5 @@
 package ro.luca1152.gmtk.entities;
 
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.Map;
 import com.badlogic.gdx.maps.MapObject;
@@ -65,7 +64,9 @@ public class Finish extends Image {
     public void act(float delta) {
         super.act(delta);
         setPosition(body.getWorldCenter().x - getWidth() / 2f, body.getWorldCenter().y - getHeight() / 2f);
-        setColor(MyGame.darkColor);
+        getColor().r = MyGame.darkColor.r;
+        getColor().g = MyGame.darkColor.g;
+        getColor().b = MyGame.darkColor.b;
     }
 
     public Rectangle getCollisionBox() {

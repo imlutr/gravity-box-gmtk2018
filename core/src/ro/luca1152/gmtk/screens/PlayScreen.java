@@ -10,11 +10,12 @@ import ro.luca1152.gmtk.entities.Level;
 public class PlayScreen extends ScreenAdapter {
     private final String TAG = PlayScreen.class.getSimpleName();
     private Level level;
+    private int levelNumber = 1;
 
     @Override
     public void show() {
         Gdx.app.log(TAG, "Entered screen.");
-        level = new Level(1);
+        level = new Level(levelNumber);
     }
 
     @Override
@@ -27,6 +28,9 @@ public class PlayScreen extends ScreenAdapter {
 
     private void update(float delta) {
         level.update(delta);
+        if (level.isFinished && levelNumber + 1 <= MyGame.TOTAL_LEVELS) {
+                level = new Level(++levelNumber);
+        }
     }
 
     @Override

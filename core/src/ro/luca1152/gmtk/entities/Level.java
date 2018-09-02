@@ -41,6 +41,7 @@ public class Level {
     private World world;
     private Player player;
     private Finish finish;
+    public boolean isFinished = false;
 
     public Level(int levelNumber) {
         stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
@@ -204,6 +205,10 @@ public class Level {
         } else {
             MyGame.lightColor.lerp(originalLightColor, .05f);
             MyGame.darkColor.lerp(originalDarkColor, .05f);
+        }
+        // If the two colors are close enough (inconsistency caused by lerp)
+        if (Math.abs(MyGame.lightColor.r - MyGame.lightColor2.r) <= 3f / 255f && Math.abs(MyGame.lightColor.g - MyGame.lightColor2.g) <= 3f / 255f && Math.abs(MyGame.lightColor.b - MyGame.lightColor2.b) <= 3f / 255f) {
+            isFinished = true;
         }
     }
 
