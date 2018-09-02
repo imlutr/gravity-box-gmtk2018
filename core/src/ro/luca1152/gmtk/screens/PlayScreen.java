@@ -18,7 +18,7 @@ public class PlayScreen extends ScreenAdapter {
     public void show() {
         Gdx.app.log(TAG, "Entered screen.");
         Music music = MyGame.manager.get("audio/music.mp3", Music.class);
-        music.setVolume(.15f);
+        music.setVolume(.30f);
         music.setLooping(true);
         music.play();
         level = new Level(levelNumber);
@@ -36,7 +36,7 @@ public class PlayScreen extends ScreenAdapter {
         level.update(delta);
         if (level.isFinished && levelNumber + 1 <= MyGame.TOTAL_LEVELS) {
                 level = new Level(++levelNumber);
-                MyGame.manager.get("audio/level-finished.wav", Sound.class).play(.1f);
+                MyGame.manager.get("audio/level-finished.wav", Sound.class).play(.2f);
         }
     }
 

@@ -47,7 +47,7 @@ public class Bullet extends Image {
 
     // Move the player
     public static void collisionWithWall(Player player, Body body) {
-        MyGame.manager.get("audio/bullet-wall-collision.wav", Sound.class).play(.2f);
+        MyGame.manager.get("audio/bullet-wall-collision.wav", Sound.class).play(.4f);
 
         // Create the force vector
         Vector2 sourcePosition = new Vector2(body.getWorldCenter().x, body.getWorldCenter().y);
