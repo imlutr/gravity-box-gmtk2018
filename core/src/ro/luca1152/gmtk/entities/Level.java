@@ -18,6 +18,9 @@ import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Manifold;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
@@ -27,7 +30,7 @@ import ro.luca1152.gmtk.utils.MyUserData;
 
 public class Level {
     // Tools
-    public Stage stage;
+    public Stage stage, uiStage;
     private OrthogonalTiledMapRenderer mapRenderer;
     private Box2DDebugRenderer b2dRenderer;
 
@@ -45,6 +48,8 @@ public class Level {
 
     public Level(int levelNumber) {
         stage = new Stage(new FitViewport(20f, 20f), MyGame.batch);
+        uiStage = new Stage(new FitViewport(640, 640), stage.getBatch());
+
         b2dRenderer = new Box2DDebugRenderer();
 
         // Generate colors
@@ -84,6 +89,28 @@ public class Level {
 
         // Remove bullets when they collide with the walls
         setContactListener();
+
+        // Create hints if it's the first level
+        if (levelNumber == 1)
+            createHints();
+    }
+
+
+    private void createHints() {
+        Label.LabelStyle labelStyle = new Label.LabelStyle(MyGame.font32, MyGame.darkColor);
+        Label info1 = new Label("shoot at the walls to move\npress 'R' to restart", labelStyle);
+        info1.setAlignment(Align.center);
+        info1.setPosition(320 - info1.getPrefWidth() / 2f, 470);
+        info1.addAction(Actions.fadeOut(0));
+        info1.addAction(Actions.fadeIn(2f));
+        uiStage.addActor(info1);
+
+        Label info2 = new Label("the blinking object is the finish point", labelStyle);
+        info2.setAlignment(Align.center);
+        info2.setPosition(320 - info2.getPrefWidth() / 2f, 135);
+        info2.addAction(Actions.fadeOut(0));
+        info2.addAction(Actions.fadeIn(2f));
+        uiStage.addActor(info2);
     }
 
     private void setInputProcessor() {
@@ -149,6 +176,7 @@ public class Level {
 
     public void update(float delta) {
         stage.act(delta);
+        uiStage.act(delta);
         updateCamera();
         mapRenderer.setView((OrthographicCamera) stage.getCamera());
         world.step(1 / 60f, 6, 2);
@@ -157,7 +185,7 @@ public class Level {
     }
 
     private void updateCamera() {
-        stage.getCamera().position.set(player.getX(), player.getY()-5f, 0f);
+        stage.getCamera().position.set(player.getX(), player.getY() - 5f, 0f);
         int mapLeft = -1, mapRight = mapWidth + 1, mapBottom = 0, mapTop = mapHeight;
         float cameraHalfWidth = stage.getCamera().viewportWidth * .5f,
                 cameraHalfHeight = stage.getCamera().viewportHeight * .5f,
@@ -219,5 +247,6 @@ public class Level {
         stage.draw();
         MyGame.batch.setColor(Color.WHITE);
 //        b2dRenderer.render(world, stage.getCamera().combined);
+        uiStage.draw();
     }
 }

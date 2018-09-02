@@ -1,9 +1,11 @@
 package ro.luca1152.gmtk;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.physics.box2d.Box2D;
 
@@ -46,6 +48,9 @@ public class MyGame extends Game {
     public static PlayScreen playScreen;
     public static LoadingScreen loadingScreen;
 
+    // Fonts
+    public static BitmapFont font32;
+
     public static Color getLightColor(int hue) {
         Color color = new Color().fromHsv(hue, 10f / 100f, 91f / 100f);
         color.a = 1f;
@@ -84,6 +89,9 @@ public class MyGame extends Game {
         // Screens
         MyGame.loadingScreen = new LoadingScreen();
         MyGame.playScreen = new PlayScreen();
+
+        // Fonts
+        font32 = new BitmapFont(Gdx.files.internal("fonts/font-32.fnt"));
 
         setScreen(MyGame.loadingScreen);
     }
