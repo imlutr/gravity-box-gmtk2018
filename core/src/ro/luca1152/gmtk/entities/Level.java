@@ -25,6 +25,7 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
 import ro.luca1152.gmtk.MyGame;
+import ro.luca1152.gmtk.screens.PlayScreen;
 import ro.luca1152.gmtk.utils.MapBodyBuilder;
 import ro.luca1152.gmtk.utils.MyUserData;
 
@@ -103,7 +104,11 @@ public class Level {
 
         // Show the level in the bottom right
         createLevelLabel(levelNumber);
+
+        if (levelNumber == MyGame.TOTAL_LEVELS)
+            createFinishMessage();
     }
+
 
     private void setInputProcessor() {
         Gdx.input.setInputProcessor(new InputAdapter() {
@@ -199,6 +204,15 @@ public class Level {
             level.addAction(Actions.fadeIn(2f));
         }
         uiStage.addActor(level);
+    }
+
+
+    private void createFinishMessage(){
+        PlayScreen.timer = (int)(PlayScreen.timer*100)/100f;
+        Label finish = new Label("Good job!\nYou finished the game\nin " + PlayScreen.timer + "s!", labelStyle);
+        finish.setAlignment(Align.center);
+        finish.setPosition(320f - finish.getPrefWidth() / 2f, 350f);
+        uiStage.addActor(finish);
     }
 
     public void update(float delta) {

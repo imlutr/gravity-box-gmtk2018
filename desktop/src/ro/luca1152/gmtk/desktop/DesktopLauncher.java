@@ -12,7 +12,7 @@ public class DesktopLauncher {
         config.title = "GMTK 2018";
         config.width = 640;
         config.height = 640;
-        config.initialBackgroundColor = Color.WHITE;
+        config.initialBackgroundColor = new Color(209 / 255f, 232 / 255f, 232 / 255f, 1);
         config.samples = 4;
         new LwjglApplication(new MyGame(), config);
     }

@@ -12,7 +12,8 @@ import ro.luca1152.gmtk.entities.Level;
 public class PlayScreen extends ScreenAdapter {
     private final String TAG = PlayScreen.class.getSimpleName();
     private Level level;
-    private int levelNumber = (int)MyGame.TOTAL_LEVELS;
+    private int levelNumber = 1;
+    public static float timer = 0f;
 
     @Override
     public void show() {
@@ -33,6 +34,7 @@ public class PlayScreen extends ScreenAdapter {
     }
 
     private void update(float delta) {
+        timer += delta;
         level.update(delta);
         if (level.reset) {
             level = new Level(levelNumber);
