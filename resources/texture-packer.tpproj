@@ -8,15 +8,15 @@ debug=false
 duplicatePadding=true
 edgePadding=true
 fast=false
-filterMag=Nearest
-filterMin=Nearest
+filterMag=Linear
+filterMin=Linear
 ignoreBlankImages=true
 maxHeight=2048
 maxWidth=2048
 minHeight=16
 minWidth=16
-paddingX=4
-paddingY=4
+paddingX=0
+paddingY=0
 pot=true
 rotation=false
 stripWhitespaceX=false
@@ -24,14 +24,14 @@ stripWhitespaceY=false
 wrapX=ClampToEdge
 wrapY=ClampToEdge
 premultiplyAlpha=false
-grid=false
+grid=true
 square=false
 bleed=true
 limitMemory=true
 useIndexes=true
 
 scaleFactors=[{suffix:"",factor:1,resampling:bicubic}]
-inputFiles=[{path:assets/square.png,type:Input,regionName:null}]
+inputFiles=[{path:assets/h-both.png,type:Input,regionName:null},{path:assets/v-top.png,type:Input,regionName:null},{path:assets/h-left.png,type:Input,regionName:null},{path:assets/h-none.png,type:Input,regionName:null},{path:assets/h-right.png,type:Input,regionName:null},{path:assets/v-bot.png,type:Input,regionName:null},{path:assets/v-both.png,type:Input,regionName:null},{path:assets/v-none.png,type:Input,regionName:null},{path:assets/joint-d-l.png,type:Input,regionName:null},{path:assets/joint-u-r.png,type:Input,regionName:null},{path:assets/joint-d-r.png,type:Input,regionName:null},{path:assets/joint-u-l.png,type:Input,regionName:null}]
 
 
 -PROJ-

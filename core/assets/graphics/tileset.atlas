@@ -1,12 +1,89 @@
 
 tileset.png
-size: 64,64
+size: 512,32
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Linear,Linear
 repeat: none
-square
+h-both
   rotate: false
-  xy: 2, 2
+  xy: 0, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h-left
+  rotate: false
+  xy: 32, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h-none
+  rotate: false
+  xy: 64, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h-right
+  rotate: false
+  xy: 96, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+joint-d-l
+  rotate: false
+  xy: 128, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+joint-d-r
+  rotate: false
+  xy: 160, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+joint-u-l
+  rotate: false
+  xy: 192, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+joint-u-r
+  rotate: false
+  xy: 224, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+v-bot
+  rotate: false
+  xy: 256, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+v-both
+  rotate: false
+  xy: 288, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+v-none
+  rotate: false
+  xy: 320, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+v-top
+  rotate: false
+  xy: 352, 0
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
