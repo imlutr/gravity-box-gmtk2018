@@ -2,6 +2,7 @@ package ro.luca1152.gmtk;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.physics.box2d.Box2D;
@@ -18,11 +19,16 @@ public class MyGame extends Game {
 
         public short bits;
 
-        EntityCategory(int bits){
-            this.bits = (short)bits;
+        EntityCategory(int bits) {
+            this.bits = (short) bits;
         }
     }
+
     public static final float PPM = 32; // Pixels per meter
+
+    // Colors
+    public static Color lightColor = new Color();
+    public static Color darkColor = new Color();
 
     // Game
     public static MyGame instance;
@@ -34,6 +40,18 @@ public class MyGame extends Game {
     // Screens
     public static PlayScreen playScreen;
     public static LoadingScreen loadingScreen;
+
+    public static Color getLightColor(int hue) {
+        Color color = new Color().fromHsv(hue, 10f / 100f, 91f / 100f);
+        color.a = 1f;
+        return color;
+    }
+
+    public static Color getDarkColor(int hue) {
+        Color color = new Color().fromHsv(hue, 42f / 100f, 57f / 100f);
+        color.a = 1f;
+        return color;
+    }
 
     @Override
     public void create() {
