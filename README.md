@@ -1,5 +1,5 @@
 # Gravity Box
-A 2D puzzle platformer made using [libGDX](https://libgdx.badlogicgames.com/) for [GMTK Jam 2018](https://itch.io/jam/gmtk-2018).
+A minimalist 2D puzzle platformer made using [libGDX](https://libgdx.badlogicgames.com/) for [GMTK Jam 2018](https://itch.io/jam/gmtk-2018).
 
 ### Running the game
 Windows: `gradlew desktop:run`  
