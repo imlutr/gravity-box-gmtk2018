@@ -18,6 +18,6 @@ All code is licensed under the GNU General Public License v3.0 License - see the
 All assets including graphics, sounds, icons and maps are licensed under the [Creative Commons BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode) unless otherwise indicated.
 
 ## Acknowledgments
-- [soundimage](https://soundimage.org/) for [music](http://soundimage.org/wp-content/uploads/2016/03/Puzzle-Game-3_Looping.mp3)
-- [freesound](https://freesound.org/) for sound effects
-- [∞ Infinity Loop](https://play.google.com/store/apps/details?id=com.balysv.loop&hl=en) for the color scheme
+- [soundimage](https://soundimage.org/) - for the [music](http://soundimage.org/wp-content/uploads/2016/03/Puzzle-Game-3_Looping.mp3)
+- [freesound](https://freesound.org/) - for the sound effects
+- [∞ Infinity Loop](https://play.google.com/store/apps/details?id=com.balysv.loop&hl=en) - for the color scheme
