@@ -1,5 +1,5 @@
 # Gravity Box
-A minimalist physics game written in Java & libGDX, made for [Game Maker's Toolkit Jam 2018](https://itch.io/jam/gmtk-2018/rate/300201) in 48 hours, where it placed 152nd (out of 1038). You can play it [here](https://luca1152.itch.io/gravity-box).
+A minimalist physics game written in Java & libGDX, made for [Game Maker's Toolkit Jam 2018](https://itch.io/jam/gmtk-2018/rate/300201) in 48 hours, where it placed 152nd (out of 1038). You can play the game [here](https://luca1152.itch.io/gravity-box).
 
 ![](https://i.imgur.com/G0dbD3E.gif)
 
